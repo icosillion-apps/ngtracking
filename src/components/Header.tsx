@@ -27,15 +27,19 @@ const Header = () => {
     <header className="bg-black border-b border-yellow-500/20 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <Link to="/" onClick={handleNavClick} className="flex items-center space-x-2 group">
-            <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 p-2 rounded-lg group-hover:from-yellow-300 group-hover:to-yellow-500 transition-all duration-300">
-              <Navigation className="h-6 w-6 text-black" />
-            </div>
-            <span className="text-2xl font-bold text-white group-hover:text-yellow-400 transition-colors duration-300">
-              NG Tracking
-            </span>
-          </Link>
+        {/* Logo */}
+<Link
+  to="/"
+  onClick={handleNavClick}
+  className="flex items-center space-x-2 group"
+>
+  <img
+    src="/go-drive-removebg.png"
+    alt="NG Tracking Logo"
+    className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+  />
+</Link>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">

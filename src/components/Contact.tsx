@@ -21,12 +21,12 @@ const Contact = () => {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: 'Address',
-      details: ['23 Fleet Street', 'Business District', 'Johanesburg, South Africa'],
+      details: ['23 Fleet Street,', 'Business District,', 'Johanesburg, South Africa'],
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: 'Phone',
-      details: ['+27 71 337 5447'],
+      details: ['+27 11 568 0420'],
     },
     {
       icon: <Mail className="h-6 w-6" />,

@@ -33,11 +33,14 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center space-x-2 mb-6">
-              <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 p-2 rounded-lg">
-                <Navigation className="h-6 w-6 text-black" />
-              </div>
-              <span className="text-2xl font-bold text-white">NG Tracking</span>
-            </Link>
+  <img
+    src="/go-drive-removebg.png"
+    alt="NG Tracking Logo"
+    className="h-12 w-auto object-contain"
+  />
+  <span className="text-2xl font-bold text-white">NG Tracking</span>
+</Link>
+
             <p className="text-gray-400 mb-6 leading-relaxed">
               Leading provider of innovative tracking solutions, empowering businesses with real-time visibility and control over their operations nationwide.
             </p>
@@ -56,21 +59,23 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <Link
-                    to={link.href}
-                    className="text-gray-400 hover:text-yellow-400 transition-colors duration-300"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+<div>
+  <h3 className="text-lg font-semibold text-white mb-6">Quick Links</h3>
+  <ul className="space-y-3">
+    {quickLinks.map((link, index) => (
+      <li key={index}>
+        <Link
+          to={link.href}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="text-gray-400 hover:text-yellow-400 transition-colors duration-300"
+        >
+          {link.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
+
 
           {/* Services */}
           <div>
@@ -91,18 +96,18 @@ const Footer = () => {
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-yellow-400 mt-1 mr-3 flex-shrink-0" />
                 <div className="text-gray-400">
-                  <p>23 fleet street</p>
-                  <p>Business District</p>
+                  <p>23 fleet street,</p>
+                  <p>Business District,</p>
                   <p>Johanesburg, South Africa</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-yellow-400 mr-3" />
-                <span className="text-gray-400">+27 71 337 5447</span>
+                <span className="text-gray-400">+27 11 568 0420</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-yellow-400 mr-3" />
-                <span className="text-gray-400">ngtracking@outlook.com</span>
+                <span className="text-gray-400">ngtrackingsa@outlook.com</span>
               </div>
             </div>
           </div>
